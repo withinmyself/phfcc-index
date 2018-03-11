@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome MoFo</title>
+</head>
+<body>
+<h1>Sup {{ name }} </h1>
+<p> {{ shop[0] }} </p>
+
+<ul>
+    {% for item in shop %}
+
+        <li> {{ item }} </li>
+
+    {% endfor %}
+
+
+</ul>
+
+
+</body>
+</html>
