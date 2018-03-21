@@ -1,180 +1,103 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]--><!--[if gt IE 8]><!--> 
-<html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="description" content="Main Page For PHFCC DOC">
-<meta name="author" content="E.T. Deubner">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="{{ url_for('static', filename='img/android-icon-144x144.png') }}">
-<meta name="theme-color" content="#ffffff"><!--META DATA-->
-		<title>PHFCC | Home</title>
-			<!--<link rel="stylesheet" href="css/normalize.min.css">-->
-			<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-<link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='img/apple-icon-57x57.png') }}">
-<link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='img/apple-icon-60x60.png') }}">
-<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/apple-icon-72x72.png') }}">
-<link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='img/apple-icon-76x76.png') }}">
-<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/apple-icon-114x114.png') }}">
-<link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='img/apple-icon-120x120.png') }}">
-<link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='img/apple-icon-144x144.png') }}">
-<link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='img/apple-icon-152x152.png') }}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/apple-icon-180x180.png') }}">
-<link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='img/android-icon-192x192.png') }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32x32.png') }}">
-<link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='img/favicon-96x96.png') }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16x16.png') }}">
-		<style>
-			body {
-				font: 20px/36px Georgia, Georgia, Georgia;
-				background-image: url({{ url_for('static', filename='img/DOC_CHALISE.png') }});
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-				background-color:darkgray;
-			}
-		</style>
-
-		<link rel="manifest" href="{{ url_for('static', filename='js/Android/manifest.json') }}"><!--ALL ICONS-->
-		<script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
-   	</head>
-    
-		<body><!--[if lt IE 8]>
-				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-			<![endif]-->
-			<div class="header-container">
-				<header class="wrapper clearfix">
-					<h1 class="title">Pleasant Hill First Christian Church</h1>
-						<nav>
-							<ul>
-								<li><a href="http://www.phfcc.org/about">About</a></li>
-								<li><a href="https://www.facebook.com/pg/phfccdisciples/photos/?ref=page_internal" target="_blank">Pictures</a></li>
-								<li><a href="http://www.phfcc.org/calendar">Calendar</a></li>
-							</ul>
-						</nav>
-				</header>
-			</div>
-
-			<div class="main-container">
-				<div class="main wrapper clearfix">
-					<article>
-						
-						<header>
-							<h3>First Christian Church (Disciples Of Christ)</h3>
+{% extends "master.html" %}
+{% block content %}
+ 
+<div class="main-container">
+	<div class="main wrapper clearfix">
+		<article>
+			<header><h3>First Christian Church (Disciples Of Christ)</h3>
 						</header>
-						
-							<p>
-								<strong>
-									We are a small congregation with a big heart and a great group of loving Disciples.<br>
-									We are located in the heart of Pleasant Hill, MO on <a href="https://goo.gl/maps/ALTJmpggmrr" target="_blank">519 Cedar Street</a>.<br>
-									Our weekly Sunday morning service is lead by Pastors D. Kent Deubner &amp;  Carla F. Deubner.
-								</strong>
-								<br><br>
-								If you are interest in being a part of an Afternoon Crochet Class, we are Re-Starting Classes Wednesday at 2:00pm.<br>
-								Alice Ballard is Leading, and her son <a href="https://www.facebook.com/ronald.ballard.3572?fref=gs&dti=123712571019123&hc_location=group" target="_blank">Ronald Ballard</a> can help you get more information. Beginners, or Seasoned Pro's, all are welcome. Call 816.540.2294 for more info.
-								<br>
-
+				 <p><strong>We are a small congregation with a big heart and a great group of loving Disciples.<br>
+							We are located in the heart of Pleasant Hill, MO on <a href="https://goo.gl/maps/ALTJmpggmrr" target="_blank">519 Cedar Street</a>.<br>
+							Our weekly Sunday morning service is lead by Pastors D. Kent Deubner &amp;  Carla F. Deubner.
+							</strong><br><br>
+							If you are interest in being a part of an Afternoon Crochet Class, we are Re-Starting Classes Wednesday at 2:00pm.<br>
+							Alice Ballard is Leading, and her son <a href="https://www.facebook.com/ronald.ballard.3572?fref=gs&dti=123712571019123&hc_location=group" target="_blank">Ronald Ballard</a> can help you get more information. <br>
+							Beginners, or Seasoned Pro's, all are welcome. Call 816.540.2294 for more info.
+							<br>
 							</p>
-					</article>
-					
-					<div class="directory">
-						<section>
-							<h1>Sunday March 18, 2018</h1>
-							<p class="left_txt">
-							<strong>
-								5th Sunday In Lent Cycle B
-							</strong><br>
-								<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book=Jeremiah">Jeremiah 31:31-34;</a>
-								<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book=Psalm"> Psalm 51:1-12;</a>
-								<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book=Hebrews"> Hebrews 5:5-10;</a>
-								<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book=John"> John 12:20-33</a><br>
-															
-							<strong>Sermon: "Time To Bleed" John 12:20-30</strong><br>
-							<strong>Adult Bible Class: Growing In Faith: - Follow Jesus' Lead&nbsp;&nbsp;&nbsp;John 12:20-36</strong><br>Donna McCullough, Teaching
 								
+<div class="meals"><img src="{{ url_for('static', filename='img/meals.png') }}"></div>
+<div class="dad_meals"><img src="{{ url_for('static', filename='img/dad_meals.png') }}"></div>
+<div class="meals_txt">
+	 <p><strong>Meals on Wheels is working with our talented and hard working folks to get everything working. This is my friend, Ruth Franklin, who is in charge of the kitchen in 		   our Lower Room. Great food delivered, or here. For $3 you can't do any better. Glad to have them. God is good.
+				</strong></p>
+				</div><br><br>
+					
+<div class="directory">
+	<section>
+		<p class="left_txt">
+			<strong>Sunday March 25, 2018<br></strong>
+					Palm Sunday Cycle B 
+					<br>
+					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book=Psalm">Psalm 118:1-2, 19-29;</a>
+					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book=Mark"> Mark 11:1-11;</a>
+					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book=John"> John 12:12-16</a><br>
+															
+					<strong>Sermon: “March Madness” John 12:12-16 (NRSV)</strong><br>
+							Palm Sunday Youth Program &amp; Processional
+					<strong>Adult Bible Class: :  John 12:12-16 </strong><br>Donna McCullough, Teaching
 							</p>
 						</section>
-					</div>
+							</div>
 					
-					<div class="head">
-						<header>
-							<h1>Those Serving Our Congregation</h1>
-						</header>
-					</div>
-					
-					
-					<div class="upcoming">
-						<p>
-							<strong>Ministers :</strong> All Of Us.<br>
-							<strong>Elders This Week - March 18</strong> | Inez Judy (o) Chris McMurphy (c) |<br>
-							<strong>Elders Next Week - March 25</strong> | Sherrie Silber(o) Lonnie Silber (c) |<br>
-							<strong>Communion Shut-In Ministry For March 2018 | </strong> o	Jackie Kimrey, Chris McMurphy, Sharlene Smith |<br>
-							<strong>Deacons</strong>  | Kathy Roach, Karie Gideon, Dottie Miller, Matt Kyle |<br>
-							<strong>At The Door</strong> : Shirley Tippie | 
-							<strong>In The Narthex</strong> : Matt Kyle | 
-							<strong>Communion Prep/Clean-Up</strong> : Sherrie Dale |<br><br>
-						</p>
-					</div>
-					
-					<div class="staff">
-						<p>
-							<strong>Sandi Beatty, Board Chair<br>
-									Donna McCullough, Elders Chair<br>
-									Sherrie Dale, Deacons Chair<br>
-									Shannon Caughron, Deacons Communion<br>
-									Ron Beatty &amp; Jodi Wasson, Custodians<br><br>
-									Pastor's Phone<br>
-								| 816.987.0024 Home | 816.456.5437 Kent | 
-								816.258.2031 Carla |<br>
-								| Website Questions, Comments, Concerns?  Contact Evan Deubner at 816.288.2093 or withinmyself@gmail.com |
-							<br><br>
-								Web Presence<br>
-								https://www.phfcc.org - Official Website<br>
-								pastorkent57@gmail.com - Kent Deubner, Pastor<br>
-								cdeubner72@gmail.com - Carla Deubner, Pastor<br>
-								phfccdisciples@outlook.com - Office Mail<br>
-								fccoffice.pastors@phfcc.org - Office Calendar<br>
-								816.542.0323 - Google Voice (Prayer Concern)<br>
-								816.540.3533 - Office<br>
-							</strong>
-						</p>
-					</div>
-			</div> <!-- #main -->
-				</div> <!-- #main-container -->
-			
-			
-			<div class="directory_img"><img src="{{ url_for('static', filename='img/ch_sign.png') }}"></div>
-			<div class="honey_bear"><img src="{{ url_for('static', filename='img/honey_bear.png') }}"></div>
-			<div class="honey_txt"><p><strong>Virginia Meeks' daughter and husband, Pastor Steve &amp; Terri House are selling some very good Honey from their own hives. They use the proceeds to support the Food Pantry and other needs in the Holden, MO Area.</strong></p>
-			<h1>Steve &amp; Terry <br> Holden, MO<br>
-				Pure Honey <br>
-				636-284-5353</h1></div>
-			
-
-			<div class="footer-container">
-				<footer class="wrapper">
-					<P>First Christian Church<br> (Disciples Of Christ)<br>
-						P.O. Box&nbsp;272 (Mailing &amp; Shipping)<br>
-						<a href="https://goo.gl/maps/ALTJmpggmrr" target="_blank">519 Cedar Street (Physical Address)</a><br>
-						Pleasant Hill, MO &nbsp; 64080<br><br>
-						Pastor D. Kent Deubner &nbsp;<br><a href="tel:1-816-456-5437">(816) 456-5437</a><br>
-						Church Office &nbsp;<br><a href="tel:1-816-540-3533">(816) 540-3533</a><br>
-						Social Media<br>
-						<a href="https://www.facebook.com/phfccdisciples/" target="_blank">Facebook</a>&nbsp; 
-						<a href="https://twitter.com/YaYa4J" target="_blank">Twitter</a><br>
-						</P>
-					<div class="pastors_pics"><img src="{{ url_for('static', filename='img/kencarla_new.png') }}"></div>
-				</footer>
+<div class="head">
+	<header>
+		<h1>Those Serving Our Congregation</h1>
+	</header>
+</div>
+<div class="upcoming">
+					<p>
+					<strong>Ministers :</strong> All Of Us.<br>
+					<strong>Elders This Week - March 25</strong> | Sherrie Silber(o) Lonnie Silber (c) |<br>
+					<strong>Elders Next Week - April 1</strong> | Jackie Kimrey(o) Donna McCullough (c) |<br>
+					<strong>Communion Shut-In Ministry For April 2018 | </strong>Kyle &amp; Kathy Roach |<br>
+					<strong>Deacons</strong>  | Richard &amp; Sherrie Dale, Jill Groll, Marsha Jones |<br>
+					<strong>At The Door</strong> : Ruth Redford | 
+					<strong>In The Narthex</strong> : Richard Dale | 
+					<strong>Communion Prep/Clean-Up</strong> : Sherrie Dale |<br><br>
+					</p>
+						</div>
+<div class="head">
+	<header>
+		<h1>Staff</h1>
+	</header>
 			</div>
-
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-			<script>window.jQuery || document.write('<script src="{{ url_for('static', filename='js/vendor/jquery-1.11.2.min.js') }}"><\/script>')</script>
-			<script src="{{ url_for('static', filename='js/main.js') }}"></script><!--- JAVA SCRIPTS --->
-		</body>
-</html>
+					
+<div class="staff">
+	 <p><strong>Sandi Beatty, Board Chair<br>
+				Donna McCullough, Elders Chair<br>
+				Sherrie Dale, Deacons Chair<br>
+				Shannon Caughron, Deacons Communion<br>
+				Ron Beatty &amp; Jodi Wasson, Custodians<br><br>
+				Pastor's Phone<br>
+				| 816.987.0024 Home | 816.456.5437 Kent | 
+				816.258.2031 Carla |<br>
+				| Website Questions, Comments, Concerns?  Contact Evan Deubner at 816.288.2093 or withinmyself@gmail.com |
+				<br><br>
+				Web Presence<br>
+				https://www.phfcc.org - Official Website<br>
+				pastorkent57@gmail.com - Kent Deubner, Pastor<br>
+				cdeubner72@gmail.com - Carla Deubner, Pastor<br>
+				phfccdisciples@outlook.com - Office Mail<br>
+				fccoffice.pastors@phfcc.org - Office Calendar<br>
+				816.542.0323 - Google Voice (Prayer Concern)<br>
+				816.540.3533 - Office<br>
+				</strong></p>
+					</div>
+			
+		
+			
+			
+<div class="directory_img">
+	<img src="{{ url_for('static', filename='img/church_sign.jpg') }}">
+			</div>
+<div class="honey_bear">
+	<img src="{{ url_for('static', filename='img/honey_bear.png') }}">
+			</div>
+<div class="honey_txt">
+	<p><strong>Virginia Meeks' daughter and husband, Pastor Steve &amp; Terri House are selling some very good Honey from their own hives. They use the proceeds to support the Food Pantry and other needs in the Holden, MO Area.</strong></p>
+		<h1>Steve &amp; Terry <br> Holden, MO<br>
+			Pure Honey <br>
+			636-284-5353</h1></div>
+			
+{% endblock %}

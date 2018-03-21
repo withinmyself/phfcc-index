@@ -1,5 +1,7 @@
 from flask import Flask, render_template
 app = Flask(__name__)
+from forms import LoginForm
+
 
 @app.route('/')
 def phfcc():
@@ -12,6 +14,11 @@ def about():
 @app.route('/calendar')
 def calendar():
     return render_template('calendar.html')
+	
+@app.route('/login')
+def login():
+    form = LoginForm()
+    return render_template('login.html', form=form)
 
 if __name__ == '__main__':
     app.run()
