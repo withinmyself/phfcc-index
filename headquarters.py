@@ -16,7 +16,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.debug = True
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:#breakingMoons~@127.0.0.1:5432/PHFCC'
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
-app.secret_key = os.environ['SECRET_KEY']
+app.secret_key = 'wastedPenguin27.'
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
