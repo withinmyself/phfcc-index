@@ -11,7 +11,8 @@ from app import app
 def phfcc():
     sermon = db.session.query(Sermon).first()
     serving = db.session.query(Serving).first()
-    return render_template('phfcc.html', sermon=sermon, serving=serving)
+    date = db.session.query(Date).first()
+    return render_template('phfcc.html', sermon=sermon, serving=serving, date=date)
 
 
 @app.route('/goto')
