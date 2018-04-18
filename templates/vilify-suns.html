@@ -1,0 +1,36 @@
+{% extends "master_alt.html" %}
+{% block content %}
+<body>
+
+<div class="head">
+	<header>
+		<h1>Those Serving Our Congregation</h1>
+	</header>
+</div>
+<div class="upcoming">
+					<p>
+					<strong>Ministers :</strong> All Of Us.<br>
+					<strong>Elders This Week - {{ weekOf }}</strong> | {{ serving.eldersThis }} |<br>
+					<strong>Elders Next Week - {{ weekOf }}</strong> | {{ serving.eldersNext }} |<br>
+					<strong>Communion Shut-In Ministry For {{ month }} 2018 | </strong>{{ serving.shutInMonth }} |<br>
+					<strong>Deacons This Week - {{ weekOf }}:</strong><br>
+						<strong>| {{ serving.deaconThis }} |</strong><br>
+					<strong>At The Door</strong> : {{ serving.doorThis  }} |<br> 
+					<strong>In The Narthex</strong> : {{ serving.narnexThis }} |<br> 
+					<strong>Communion Prep/Clean-Up</strong> : {{ serving.cleanUpThis }} |<br><br>
+					</p>
+	<p><strong>Deacons Serving Next Week:</strong><br>
+	{{ serving.deaconNext }}<br>
+	<strong>At The Door</strong>: {{ serving.doorNext }}<br>
+	<strong>In The Narthex</strong>: {{ serving.narnexNext }}<br>
+	<strong>Communion Prep/Clean-Up</strong>: {{ serving.cleanUpNext }}<br>
+	</p>
+						</div><br><br>
+	<form action="{{ url_for('phfcc') }}" method="GET">
+<button style="float: right; margin-right: 40%;" type="submit" value="Commit Changes"><p>Commit Changes</p></button>
+</form>
+<form action="{{ url_for('about_suns') }}" method="GET">
+	<button style="float: left; margin-left: 40%;"type="submit" value="Commit Changes"><p>Start Over</p></button>
+</form><br><br>
+</body>
+{% endblock %}

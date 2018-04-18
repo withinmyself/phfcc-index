@@ -1,0 +1,16 @@
+{% extends "master_alt.html" %}
+{% block content %}
+
+<form action="{{ url_for('wearing_suns') }}" method="POST">
+<input type="text" placeholder="Sundays Description" name="sundayTitle" style="width: 75%;"><br><br>
+	<input type="text" placeholder="Book One" name="bookOne"><input type="text" placeholder="Verse One" name="verseOne"><br><br>
+	<input type="text" placeholder="Book Two" name="bookTwo"><input type="text" placeholder="Verse Two" name="verseTwo"><br><br>
+	<input type="text" placeholder="Book Three" name="bookThree"><input type="text" placeholder="Verse Three" name="verseThree"><br><br>
+	<input type="text" placeholder="Book Four" name="bookFour"><input type="text" placeholder="Verse Four" name="verseFour"><br><br>
+	<br><br><br>
+	<input type="text" placeholder="Sermon" name="sermon" style="width: 75%;"><br><br>
+	<input type="text" placeholder="Adult Bible Class" name="adultBibleClass" style="width:50%;"><input type="text" placeholder="Teacher" name="bibleClassTeacher" style="width: 25%;">
+	<input type="submit" value="SUBMIT">
+</form>
+
+{% endblock %}

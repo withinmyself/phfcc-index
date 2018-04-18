@@ -26,17 +26,17 @@
 <div class="directory">
 	<section>
 		<p class="left_txt">
-			<strong>Sunday April 15, 2018<br></strong>
-					3rd Sunday of Easter Cycle B 
+			<strong>Sunday {{ date.month }} {{ date.date }}, {{ date.year }}<br></strong>
+					{{ sermon.sundayTitle }}
 					<br>
-					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book=Acts"> Acts 3:12-19; </a>
-					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book=Psalm"> Psalm 4; 1 </a>
-					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book=John"> John 3:1-7</a>
-			<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book=Luke"> Luke 24:36b-48</a><br>
-					<strong>Sermon: “Message Me” Acts 3:12-19 (NRSV)</strong><br>
-							Palm Sunday Youth Program &amp; Processional
-					<strong>Adult Bible Class: Wholeness through Jesus Acts 3:1-19<br>
-						    Teaching: Pastor Kent </strong><br>
+					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book={{sermon.bookOne }}"> {{ sermon.bookOne }} {{ sermon.verseOne }} </a>
+					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book={{ sermon.bookTwo }}"> {{ sermon.bookTwo }} {{ sermon.verseTwo }} </a>
+					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book={{ sermon.bookThree }}"> {{ sermon.bookThree }} {{ sermon.verseThree }}</a>
+			<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book={{ sermon.bookFour }}"> {{ sermon.bookFour }} {{ sermon.verseFour }}</a><br>
+					<strong>Sermon: {{ sermon.sermon }}</strong><br>
+						
+					<strong>Adult Bible Class: {{ sermon.adultBibleClass }}<br>
+						    Teaching: {{ sermon.bibleClassTeacher }} </strong><br>
 							</p>
 						</section>
 							</div>
@@ -49,20 +49,20 @@
 <div class="upcoming">
 					<p>
 					<strong>Ministers :</strong> All Of Us.<br>
-					<strong>Elders This Week - April 15, 2018</strong> | Alice Ballard (o) Ron Ballard (c) |<br>
-					<strong>Elders Next Week - April 22, 2018</strong> | Patti Alexander(o) Kyle Roach (c) |<br>
-					<strong>Communion Shut-In Ministry For April 2018 | </strong>Kyle &amp; Kathy Roach |<br>
-					<strong>Deacons This Week - April 15, 2018:</strong><br>
-						<strong>| Kathy Roach, Frankie Lees, Karie Gideon, Dottie Miller |</strong><br>
-					<strong>At The Door</strong> : Richard Dale |<br> 
-					<strong>In The Narthex</strong> : Kathy Roach |<br> 
-					<strong>Communion Prep/Clean-Up</strong> : Jill Groll |<br><br>
+					<strong>Elders This Week - {{ date.month }} {{ date.date }}, {{ date.year }}</strong> | {{ serving.eldersThis }} |<br>
+					<strong>Elders Next Week - {{ date.month }} {{ date.date }}, {{ date.year }}</strong> | {{ serving.eldersNext }} |<br>
+					<strong>Communion Shut-In Ministry For {{ date.month }} {{ date.year }}</strong> | {{ serving.shutInMonth }} |<br>
+					<strong>Deacons This Week - {{ date.month }} {{ date.date }}, {{ date.year }}:</strong><br>
+						<strong>| {{ serving.deaconThis }} |</strong><br>
+					<strong>At The Door</strong> : {{ serving.doorThis }}<br> 
+					<strong>In The Narthex</strong> : {{ serving.narnexThis }}<br> 
+					<strong>Communion Prep/Clean-Up</strong> : {{ serving.cleanUpThis }}<br><br>
 					</p>
 	<p><strong>Deacons Serving Next Week:</strong><br>
-	Kevin &amp; Crystal Alexander, Denver &amp; Wanda Creason<br>
-	<strong>At The Door</strong>: Frankie Lees<br>
-	<strong>In The Narthex</strong>: Kevin Alexander<br>
-	<strong>Communion Prep/Clean-Up</strong>: Jill Groll<br>
+	{{ serving.deaconNext }}<br>
+	<strong>At The Door</strong>: {{ serving.doorNext }}<br>
+	<strong>In The Narthex</strong>: {{ serving.narnexNext }}<br>
+	<strong>Communion Prep/Clean-Up</strong>: {{ serving.cleanUpNext }}<br>
 	</p>
 						</div>
 <div class="head">

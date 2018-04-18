@@ -1,0 +1,23 @@
+{% extends "master_alt.html" %}
+{% block content %}
+
+<form action="{{ url_for('start_suns') }}" method="GET">
+<button style="float:right; margin-right: 30%;" type="submit">Edit Sermon Information</button>
+</form>
+
+<form action="{{ url_for('about_suns') }}" method="GET">
+<button style="float:left; margin-left: 30%;" type="submit">Edit Deacon/Elders Information</button>
+</form>
+<br><br>
+<form action="{{ url_for('about_time') }}" method="GET">
+<button style="float:left; margin-left: 47%;" type="submit">Change Date</button>
+</form>
+
+
+
+
+
+
+
+
+{% endblock %}

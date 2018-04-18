@@ -1,0 +1,28 @@
+{% extends "master_alt.html" %}
+{% block content %}
+
+<div class="directory">
+	<section>
+		<p class="left_txt">
+			<strong>{{ sermon.sundayTime}}<br></strong>
+					{{ sermon.sundayTitle }}
+					<br>
+					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book={{ sermon.bookOne }}"> {{ '{0} {1}'.format(sermon.bookOne, sermon.verseOne) }}</a>
+					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book={{ sermon.bookTwo }}"> {{ '{0} {1}'.format(sermon.bookTwo, sermon.verseTwo) }}</a>
+					<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book={{ sermon.bookThree }}"> {{ '{0} {1}'.format(sermon.bookThree, sermon.verseThree) }}</a>
+			<a href="https://www.homileticsonline.com/subscriber/btl_scripture_results.asp?bible_book={{ sermon.bookFour }}"> {{ '{0} {1}'.format(sermon.bookFour, sermon.verseFour) }}</a><br>
+					<strong>Sermon: {{ sermon.sermon }}</strong><br>
+							
+					<strong>Adult Bible Class: {{ sermon.adultBibleClass }}<br>
+						    Teaching: {{ sermon.bibleClassTeacher }} </strong><br>
+							</p>
+						</section>
+							</div>
+<form action="{{ url_for('phfcc') }}" method="GET">
+<button style="float: right; margin-right: 40%;" type="submit" value="Commit Changes"><p>Commit Changes</p></button>
+</form>
+<form action="{{ url_for('start_suns') }}" method="GET">
+	<button style="float: left; margin-left: 40%;"type="submit" value="Commit Changes"><p>Start Over</p></button>
+</form><br><br>
+
+{% endblock %}

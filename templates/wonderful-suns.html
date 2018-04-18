@@ -1,0 +1,19 @@
+{% extends "master_alt.html" %}
+{% block content %}
+
+<form action="{{ url_for('wonderful_suns') }}" method="POST">
+<input type="text" placeholder="Elders Serving This Week" name="eldersThis" style="width: 75%;"><br><br>
+<input type="text" placeholder="Elders Serving Next Week" name="eldersNext" style="width: 75%;"><br><br>
+<input type="text" placeholder="Communion Shut-in for {{ month }}" name="shutInMonth" style="width: 75%;"><br><br>
+	<input type="text" placeholder="Deacons Serving This Week" name="deaconThis" style="width: 75%;"><br><br>
+	<input type="text" placeholder="Deacons Serving Next Week" name="deaconNext" style="width: 75%;"><br><br>
+	<input type="text" placeholder="At The Door This Week" name="doorThis" style="width: 75%;"><br><br>
+	<input type="text" placeholder="At The Door Next Week" name="doorNext" style="width: 75%;"><br><br>
+	<input type="text" placeholder="In The Narnex This Week" name="narnexThis" style="width: 75%;"><br><br>
+	<input type="text" placeholder="In The Narnex Next Week" name="narnexNext" style="width: 75%;"><br><br>
+	<input type="text" placeholder="Clean Up This Week" name="cleanUpThis" style="width: 75%;"><br><br>
+	<input type="text" placeholder="Clean Up Next Week" name="cleanUpNext" style="width: 75%;"><br><br>
+	<input type="submit" value="SUBMIT">
+</form>
+
+{% endblock %}

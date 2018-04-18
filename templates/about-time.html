@@ -1,0 +1,12 @@
+{% extends "master_alt.html" %}
+{% block content %}
+
+
+
+<form action="{{ url_for('alter_time') }}" method="POST">
+	<input type="text" placeholder="Month" name="month"><input type="text" placeholder="Date" name="date"><input type="text" placeholder="Year" name="year">
+		<input type="submit" value="SUBMIT">
+</form>
+
+
+{% endblock %}
