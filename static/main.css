@@ -98,7 +98,10 @@ nav a:hover {
 				color: black;
 				font-weight:bolder; }
 
+.maintext p {
 
+    margin-bottom:5%;
+}
 
 
 
@@ -109,8 +112,6 @@ nav a:hover {
 					text-align: center;
 					float:none;
 					margin: auto;
-					
-					margin-top: 5%;
 					color: darkred;
 					
 }
@@ -120,13 +121,14 @@ nav a:hover {
 					float:none;
 					margin: auto;
 					
-					margin-top: 5%;
+					margin-top: 1%;
 					color: #670505;
 					font-weight: bold; }
 .main article p {	color: wheat;
 					text-align: center; 
 					font-size: 1em;
 					background-color: darkred;
+                    margin-top: 4%;
 					clear:both;}
 
 
@@ -140,7 +142,6 @@ nav a:hover {
 .left_txt {float:none;
 	color: wheat;
 	text-align: center;
-	margin-bottom: 5%;
 	background-color: darkred;
 		border-top: 5px solid black;
 	border-bottom: 5px solid black;
@@ -163,7 +164,7 @@ nav a:hover {
 	font: 20px/34px Georgia, Georgia, Georgia;
 	border-top: 5px solid black;
 	border-bottom: 5px solid black;
-	margin-bottom: 5%;
+    margin-top:1%;
 }
 
 .staff {
@@ -176,7 +177,6 @@ nav a:hover {
 	font: 20px/34px Georgia, Georgia, Georgia;
 	border-top: 5px solid black;
 	border-bottom: 5px solid black;
-	margin-bottom: 5%;
 }
 
 .head h1 {text-align: center;
@@ -185,12 +185,13 @@ nav a:hover {
 
 .pastors_pics img {	
 					margin:auto;
-					margin-left: 1%;
+					margin-right: 67%;
+                    margin-top: 1%;
 					margin-bottom: 1%;
-					width: 50%;
-					float: left;
-					clear: both;
-					position: relative;	}
+					width: 13%;
+					float: right;
+
+	}
 
 
 
@@ -201,55 +202,41 @@ nav a:hover {
 						text-align: left;
 						float: left;
 						color: wheat; }
-.directory_img {
+.manger img {
 				width: 30%;
-				float:none;
-				margin: auto;}
-	.directory_img img {width: 100%;}
+				float:left;
+				margin-left: 10%;
+                margin-top: 7%;}
 
 
-.honey_bear {width: 20%;
-				float: none;
-				margin: auto;
-	}
-.meals img {width: 100%;}
 
-.meals {width: 50%;
-				float: left;
-				margin-left: 8%;
-	}
-.dad_meals img {width: 100%;}
-
-.dad_meals {width: 30%;
+.nightchurch img {width: 30%;
 				float: right;
-				margin-right: 5%;
+				margin-right: 15%;
+                margin-top: 3%;
+               
 	}
+.doorstolove img {width: 30%;
+            float: left;
+            margin-left: 17%;
+            margin-bottom: 5%;}
+
+
+.snowchurch img {width: 30%;
+                float: right;
+                margin-right: 17%;
+                margin-bottom: 5%;}
+
 .meals_txt p {max-width: 70%;
 			float: right;
-			margin-bottom: 5%;
 			text-align: right;
 			font-weight:bolder;
 			
 			font: 20px/28px Georgia, Georgia, Georgia;}
 
 
-.honey_bear img {width: 100%;}
 
 
-.honey_txt p {max-width: 800%;
-			float: left;
-			margin:auto;
-			text-align: center;
-			font-weight:bolder;
-			
-			font: 20px/28px Georgia, Georgia, Georgia;}
-.honey_txt h1 {
-	max-width: 50%;
-	float: left;
-	margin:auto;
-	text-align: center;
-	font: 30px/40px Georgia, Georgia, Georgia;
-	background-color: darkgoldenrod;}
 
 
 
@@ -265,13 +252,7 @@ nav a:hover {
 	
 	
 	
-	.pastors_pics img {	
-					margin-top: 1%;
-					margin-right: 1%;
-					width: 22%;
-					float: right;
-					clear: right;
-					position: relative; }
+
 
 	
 	
