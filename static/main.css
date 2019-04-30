@@ -210,9 +210,10 @@ nav a:hover {
 
 
 
-.nightchurch img {width: 30%;
-				float: right;
-				margin-right: 15%;
+.nightchurch img {width: 60%;
+				float: left;
+                margin-left: 20%;
+				margin-right:3%;
                 margin-top: 3%;
                
 	}
